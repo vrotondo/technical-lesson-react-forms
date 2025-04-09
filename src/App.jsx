@@ -7,12 +7,12 @@ import EmployeeList from './components/EmployeeList';
 
 function App() {
   const [employees, setEmployees] = useState(employeeData)
-  
+
   return (
     <div>
-      <Header/>
-      <EmployeeForm/>
-      <EmployeeList employees={employees}/>
+      <Header />
+      <EmployeeForm employees={employees} setEmployees={setEmployees} />
+      <EmployeeList employees={employees} />
     </div>
   )
 }
